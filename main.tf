@@ -1,6 +1,7 @@
 resource "google_compute_instance" "default" {
   name         = "test"
   machine_type = "n1-standard-2"
+  allow_stopping_for_update = true 
   zone         = "us-east1-b"
 
   tags = ["foo", "bar"]
